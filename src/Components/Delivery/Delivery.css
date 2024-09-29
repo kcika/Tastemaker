@@ -1,0 +1,25 @@
+.orderHero {
+    background: url(/src/assets/order2.jpg) center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.menu_item img {
+    width: 6.8vw;
+    min-width: 80px;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.menu_item .active {
+    border: 4px solid #bdab81;
+    padding: 2px;
+}
+
+.foodItem {
+    box-shadow: 0 0 5px #e2d3b0;
+}
+
+.desc {
+    height: 72px;
+}

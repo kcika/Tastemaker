@@ -1,0 +1,41 @@
+.marquee-content li {
+    width: 275px;
+    height: 183px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 8px;
+    border-radius: 10px;
+}
+
+.marquee-content img {
+    width: 275px;
+}
+
+.marquee-box {
+    position: relative;
+}
+
+.marquee-content {
+    width: calc(10 * 291px);
+    animation: scrolling 30s linear infinite;
+}
+
+.marquee-content:hover,
+.marquee-content2:hover,
+.marquee-content3:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

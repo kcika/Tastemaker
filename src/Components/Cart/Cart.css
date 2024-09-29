@@ -1,0 +1,8 @@
+.cross {
+    cursor: pointer;
+}
+
+.cartImg {
+    max-width: 100px;
+    min-width: 30px;
+}

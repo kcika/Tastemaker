@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.starters,
+.mainDish {
+    padding: 3rem 0;
+}
+
+.starters p.type,
+.mainDish p.type {
+    font-family: "Playwrite CU", cursive;
+}
+
+.dish-img {
+    width: 100px;
+}
+
+.desc {
+    width: 85%;
+}

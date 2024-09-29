@@ -1,0 +1,22 @@
+.contactHero {
+    background: url(/src/assets/contacthero.webp) center;
+    background-size: cover;
+    height: 70vh;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px 0;
+    margin: 5px 0 20px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #bdab81;
+    color: #bdab81;
+}
+
+p i {
+    font-size: 12px;
+}

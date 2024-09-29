@@ -1,0 +1,243 @@
+.golden {
+    color: hsl(38, 61%, 73%);
+}
+
+.bg-golden {
+    background-color: #bdab81;
+}
+
+.black {
+    background-color: #0b1315;
+}
+
+.gold {
+    color: hsl(38, 61%, 73%);
+}
+
+.bg-gold {
+    background-color: hsl(38, 61%, 73%);
+}
+
+.ws-2 {
+    word-spacing: 2px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-3 {
+    letter-spacing: 3px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.darkoverlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.translate-top {
+    transform: translateY(-50%);
+}
+
+:root {
+    --gold-crayola: hsl(38, 61%, 73%);
+    --quick-silver: hsla(0, 0%, 65%, 1);
+    --davys-grey: hsla(30, 3%, 34%, 1);
+    --smoky-black1: hsla(40, 12%, 5%, 1);
+    --smoky-black2: hsla(30, 8%, 5%, 1);
+    --smoky-black3: hsla(0, 3%, 7%, 1);
+    --eerie-black1: hsla(210, 4%, 9%, 1);
+    --eerie-black2: hsla(210, 4%, 11%, 1);
+    --eerie-black3: hsla(180, 2%, 8%, 1);
+    --eerie-black4: hsla(0, 0%, 13%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+    --black: hsla(0, 0%, 0%, 1);
+    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+}
+
+.hover-underline {
+    position: relative;
+    max-width: max-content;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    border-block: 1px solid var(--gold-crayola);
+    transform: scaleX(0.2);
+    opacity: 0;
+    transition: 500ms;
+}
+
+.hover-underline:is(:hover, :focus-visible)::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* home section */
+.cta-menu {
+    color: var(--gold-crayola);
+}
+
+.storysec {
+    background-color: var(--smoky-black1);
+}
+
+.menusec {
+    background-color: var(--eerie-black3);
+}
+
+.btn1 {
+    display: block;
+    position: relative;
+    color: var(--gold-crayola);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: max-content;
+    border: 2px solid var(--gold-crayola);
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn1::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background-color: var(--gold-crayola);
+    transition: 500ms ease;
+    z-index: -1;
+}
+
+.btn1 .text {
+    transition: 250ms ease;
+}
+
+.btn1 .text-2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: var(--smoky-black1);
+    font-weight: 700;
+}
+
+.btn1:is(:hover, :focus-visible)::before {
+    bottom: -50%;
+}
+
+.btn1:is(:hover, :focus-visible) .text-1 {
+    transform: translateY(-40px);
+}
+
+.btn1:is(:hover, :focus-visible) .text-2 {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signaturesec {
+    background-color: var(--smoky-black1);
+}
+
+.reservationsec {
+    background-color: var(--smoky-black1);
+}
+
+.testimonialsec {
+    background-color: var(--eerie-black1);
+}
+
+.gallerysec {
+    background-color: var(--smoky-black1);
+}
+
+/* about section */
+.story {
+    background-color: var(--smoky-black1);
+}
+
+.mission {
+    background-color: var(--eerie-black1);
+}
+
+/* menu section */
+.starters {
+    background-color: var(--smoky-black1);
+}
+
+.mainDish {
+    background-color: var(--eerie-black1);
+}
+
+.strength1,
+.strength3 {
+    background-color: var(--eerie-black3);
+}
+
+.strength2,
+.strength4 {
+    background-color: var(--smoky-black3);
+}
+
+.card-text {
+    color: var(--quick-silver);
+}
+
+.testimonialsec2 {
+    background-color: var(--smoky-black1);
+}
+
+.testimonialsec2 .testimonial {
+    background-color: var(--eerie-black3);
+}
+
+.bi-star-fill {
+    font-size: 18px;
+}
+
+.subBtn {
+    padding: 12px 45px;
+    background-color: hsl(38, 61%, 73%);
+    color: #0b1315;
+}
+
+.icons a {
+    color: #fff;
+    margin-right: 16px;
+    transition: all 500ms;
+}
+
+.icons a:hover i {
+    color: hsl(38, 61%, 73%);
+    transition: all 500ms;
+}

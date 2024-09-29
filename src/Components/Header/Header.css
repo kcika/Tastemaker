@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Forum", serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 20px;
+    background-color: transparent;
+    z-index: 4;
+    border-block-end: 1px solid transparent;
+    transition: all 250ms;
+}
+
+.header.active {
+    background-color: rgb(28, 24, 24);
+    border-color: hsla(0, 0%, 0%, 0.15);
+}
+
+.header.hide {
+    transform: translateY(-100%);
+    transition: 500ms;
+}
+
+.header.visible {
+    transform: translateY(0);
+}
+
+.logo {
+    font-family: "Playwrite CU", cursive;
+}
+
+.navLinks {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 0;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: hsl(38, 61%, 73%);
+}
+
+.nav-link:hover {
+    color: hsl(38, 61%, 73%) !important;
+}
+
+button {
+    border: 1px solid hsl(38, 61%, 73%);
+    transition: all .5s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(38, 61%, 73%);
+    border: 1px solid hsl(38, 61%, 73%);
+}
+
+.topNav {
+    background-color: #0b1315;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 25px;
+    right: 160px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.searchbox {
+    position: absolute;
+    left: 0;
+    top: -150px;
+    background-color: #0b1315;
+    color: #fff;
+    opacity: .95;
+    width: 100%;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.searchbox.active {
+    top: 0;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.searchCont {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 30px auto;
+}
+
+.searchCont input {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.searchCancel {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    color: #0b1315;
+}
+
+.toggle-cancel {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .navLinks {
+        position: absolute;
+        top: 0px;
+        right: -1000px;
+        height: 100vh;
+        width: 80vw;
+        display: block !important;
+        background-color: #0b1315;
+        padding: 60px 30px;
+        text-align: left;
+        transition: all .3s;
+        z-index: 999;
+    }
+
+    nav li:hover::before {
+        width: 0%;
+        transition: all .5s;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navLinks.active {
+        right: 0;
+        transition: all .3s;
+    }
+
+    .toggle-cancel {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 18px;
+    }
+
+    .searchCancel {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #0b1315;
+    }
+}
